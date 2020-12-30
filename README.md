@@ -13,3 +13,9 @@
  ## Reflections and Comments
 The hole process of making the code was easy but took me a lot of time
 The Quiz will put random number to check you are not reipot and this things be there untill you put the right random number .
+
+Driver: Rama Yaser 
+ Navigator: khaled ziadeh 
+
+ we fixed some mistakes in the code. 
+ we added functions to our code. 
