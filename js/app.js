@@ -1,9 +1,31 @@
 'use strict'
 
-var thescore=7;
+var thescore = 0;
+// var userNameVisetor=prompt("Hello can you give me usirname ?")
+// //console.log (userNameVietor);
+// alert("Hello "+ userNameVisetor + " Welcome in my cv wibsite" )
+
+// var randomNum=Math.floor(Math.random() * 1000);  
+// //console.log(randomNum);
+// var cheack=prompt("we must cheack you are report or not if you not please enter this number " + randomNum)
+// //console.log(cheack);
+// for(var i=0;randomNum!=cheack; i++){
+// if (randomNum==cheack){
+//     alert("welcome "+ userNameVisetor);
+//     thescore++;
+// }
+// else{
+// //thescore--;
+//  cheack=prompt("we must cheack you are report or not if you not please enter this number " + randomNum)
+
+
+//}}
 var userNameVisetor=prompt("Hello can you give me usirname ?")
+function check(){
+   // var userNameVisetor=prompt("Hello can you give me usirname ?")
 //console.log (userNameVietor);
 alert("Hello "+ userNameVisetor + " Welcome in my cv wibsite" )
+
 var randomNum=Math.floor(Math.random() * 1000);  
 //console.log(randomNum);
 var cheack=prompt("we must cheack you are report or not if you not please enter this number " + randomNum)
@@ -11,116 +33,257 @@ var cheack=prompt("we must cheack you are report or not if you not please enter 
 for(var i=0;randomNum!=cheack; i++){
 if (randomNum==cheack){
     alert("welcome "+ userNameVisetor);
+    thescore++;
 }
 else{
-    thescore--;
+//thescore--;
  cheack=prompt("we must cheack you are report or not if you not please enter this number " + randomNum)
 
 
 }}
+}
+ check(); 
+ q1(); 
+ q2(); 
+ q3(); 
+ q5(); 
+ q6(); 
+ q7(); 
+numbArray(); 
 
 
-var firstQuestion=confirm("did we meet before ? if your answer yes click ok if no click cancel ?")
+function q1 (){ 
+    var firstQuestion=confirm("did we meet before ? if your answer yes click ok if no click cancel ?")
 //console.log(firstquestion)
 
 if (firstQuestion === true){
 
-    alert("thats good "+ userNameVisetor + "  :) thats easy to guess after 5 question" )}
+    alert("thats good "+ userNameVisetor + "  :) thats easy to guess after 5 question" )
+    thescore++;
+}
     else {
-        thescore--;
+       // thescore--;
 
 alert ("i hope to meet you soon "+ userNameVisetor +" but try to guess this question")
 
     }
 
-var secondQueston=prompt("Did I study BA? You can choose the answer from here?(yes,No)");
+
+}
+// var firstQuestion=confirm("did we meet before ? if your answer yes click ok if no click cancel ?")
+// //console.log(firstquestion)
+
+// if (firstQuestion === true){
+
+//     alert("thats good "+ userNameVisetor + "  :) thats easy to guess after 5 question" )
+//     thescore++;
+// }
+//     else {
+//        // thescore--;
+
+// alert ("i hope to meet you soon "+ userNameVisetor +" but try to guess this question")
+
+//     }
+
+function q2(){
+    var secondQueston=prompt("Did I study BA? You can choose the answer from here?(yes,No)");
 
 //console.log(secondqueston);
-if(secondQueston.toLowerCase()==="yes"){
+if(secondQueston.toLowerCase()==="yes" || secondQueston.toLowerCase()==='y'){
 
     alert ("yes thats right ")
+    thescore++; 
 }
 else {
-    thescore--;
+    //thescore--;
 
     alert("thats wrong i actulle have BA ")
 }
 
-var thrQueston=prompt("did i work in programing when i graduated? (y,n)" );
+}
+// var secondQueston=prompt("Did I study BA? You can choose the answer from here?(yes,No)");
 
-//console.log(thrqueston);
-if (thrQueston.toLowerCase()==="n"){
+// //console.log(secondqueston);
+// if(secondQueston.toLowerCase()==="yes" || secondQueston.toLowerCase()==='y'){
+
+//     alert ("yes thats right ")
+//     thescore++; 
+// }
+// else {
+//     //thescore--;
+
+//     alert("thats wrong i actulle have BA ")
+// }
+
+function q3(){
+    var thrQueston=prompt("did i work in programing when i graduated?" );
+
+    //console.log(thrqueston);
+    if (thrQueston.toLowerCase()==="n" || thrQueston.toLowerCase()==='no' ){
+    
+    
+        alert ("yes thats right i was working in sales")
+        thescore++;
+    }else {
+        //thescore--;
+    
+        alert("that wrong but i wish");
+    }
+    
+}
+
+// var thrQueston=prompt("did i work in programing when i graduated?" );
+
+// //console.log(thrqueston);
+// if (thrQueston.toLowerCase()==="n" || thrQueston.toLowerCase()==='no' ){
 
 
-    alert ("yes thats right i was working in sales")
-}else {
-    thescore--;
+//     alert ("yes thats right i was working in sales")
+//     thescore++;
+// }else {
+//     //thescore--;
 
-    alert("that wrong but i wish");
+//     alert("that wrong but i wish");
+// }
+
+
+function q5(){
+    var fiveQueston=prompt("is madried is the best football team for me ? ");
+    if (fiveQueston.toLowerCase()=== "yes" || fiveQueston.toLowerCase()==='y'){
+    
+        alert ("yes thats right ")
+        thescore++;
+    }
+    else {
+        //thescore--;
+    
+        alert("no i love madried")
+    
+    }
+    
 }
 
 
+// var fiveQueston=prompt("is madried is the best football team for me ? ");
+// if (fiveQueston.toLowerCase()=== "yes" || fiveQueston.toLowerCase()==='y'){
 
-var fiveQueston=prompt("is madried is the best football team for me ? (yes,no) ");
-if (fiveQueston.toLowerCase()=== "yes"){
+//     alert ("yes thats right ")
+//     thescore++;
+// }
+// else {
+//     //thescore--;
+
+//     alert("no i love madried")
+
+// }
+
+function q6(){
+    var sixQueston=prompt("am i working now ? (yes,no) ");
+if (sixQueston.toLowerCase()=== "no" || sixQueston.toLowerCase()==='n' ){
 
     alert ("yes thats right ")
-}
-else {
-    thescore--;
-
-    alert("no i love madried")
-
-}
-
-var sixQueston=prompt("am i working now ? (yes,no) ");
-if (sixQueston.toLowerCase()=== "no"){
-
-    alert ("yes thats right ")
+    thescore++;
 }
 else {
 
-    thescore--;
+   // thescore--;
     alert("No im not ")
 
 }
 
 alert("your score is " + thescore + " / 7");
-
-var score=4;
-
-for (var x =0 ; x < 4;){
-
-
-
-
-var fourQueston=prompt("can you guess how old am i ! ? ");
-if (fourQueston<24){
-
-    alert ("too low can you guess again")
-    x++;
-score=score-1;    
-
-}
-else if (fourQueston==24){
-
-    alert("yes im 24 years old")
-break;
-
-}
-else if(fourQueston>=25)
-{
-alert ("to height can you guess again")
-x++;
-score=score-1;    
-
-
 }
 
 
+// var sixQueston=prompt("am i working now ? (yes,no) ");
+// if (sixQueston.toLowerCase()=== "no" || sixQueston.toLowerCase()==='n' ){
+
+//     alert ("yes thats right ")
+//     thescore++;
+// }
+// else {
+
+//    // thescore--;
+//     alert("No im not ")
+
+// }
+
+// alert("your score is " + thescore + " / 7");
+
+
+var score = 0;
+
+function q7(){
+    var score = 0;
+    for (var x =0 ; x < 4;){
+
+
+
+
+        var fourQueston=prompt("can you guess how old am i ! ? ");
+        if (fourQueston<24){
+        
+            alert ("too low can you guess again")
+            x++;
+           
+        
+        }
+        else if (fourQueston==24){
+        
+            alert("yes im 24 years old")
+            score++; 
+        break;
+        
+        }
+        else if(fourQueston>=25)
+        {
+        alert ("to height can you guess again")
+        x++;
+           
+        
+        
+        }
+        
+        
+        }
+        if(true){
+        alert("you got "  + score +" / 4" )}
 }
-if(true){
-alert("you got "  + score +" / 4" )}
+
+
+// for (var x =0 ; x < 4;){
+
+
+
+
+// var fourQueston=prompt("can you guess how old am i ! ? ");
+// if (fourQueston<24){
+
+//     alert ("too low can you guess again")
+//     x++;
+   
+
+// }
+// else if (fourQueston==24){
+
+//     alert("yes im 24 years old")
+//     score++; 
+// break;
+
+// }
+// else if(fourQueston>=25)
+// {
+// alert ("to height can you guess again")
+// x++;
+   
+
+
+// }
+
+
+// }
+// if(true){
+// alert("you got "  + score +" / 4" )}
 /*
 var firstArray=["17","15","10","18","13","7"];
 for(var m=0;m<6;m++){
@@ -164,25 +327,47 @@ var firstArray=["17","15","10","18","13","7"];
 //     alert("this is the numbers " + firstArray.toString());
 
 // }
+ 
+function numbArray(){
+    var firstArray=["17","15","10","18","13","7"];
+    for (var k =0  ;k <=6 ; k++){
 
-for (var k =0  ;k <=6 ; k++){
-
-    var userGuess=prompt("please guess number from 1 - 20");    
-    for(var j =0 ; j< firstArray.length;j++ ){
-        if(userGuess==firstArray[j]){
-         alert("yes that one of thim");
-            k=6;
-
+        var userGuess=prompt("please guess number from 1 - 20");    
+        for(var j =0 ; j< firstArray.length;j++ ){
+            if(userGuess==firstArray[j]){
+             alert("yes that one of thim");
+                k=6;
+    
+                }
+                
+            
+    
             }
+            if (k==6){
+                alert("this is the numbers " + firstArray.toString());
+               break;
+                }    
+        } 
+}
+
+// for (var k =0  ;k <=6 ; k++){
+
+//     var userGuess=prompt("please guess number from 1 - 20");    
+//     for(var j =0 ; j< firstArray.length;j++ ){
+//         if(userGuess==firstArray[j]){
+//          alert("yes that one of thim");
+//             k=6;
+
+//             }
             
         
 
-        }
-        if (k==6){
-            alert("this is the numbers " + firstArray.toString());
-           break;
-            }    
-    }        
+//         }
+//         if (k==6){
+//             alert("this is the numbers " + firstArray.toString());
+//            break;
+//             }    
+//     }        
         
     
 
