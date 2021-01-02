@@ -164,7 +164,6 @@ var firstArray=["17","15","10","18","13","7"];
 //     alert("this is the numbers " + firstArray.toString());
 
 // }
-
 for (var k =0  ;k <=6 ; k++){
 
     var userGuess=prompt("please guess number from 1 - 20");    
@@ -184,9 +183,6 @@ for (var k =0  ;k <=6 ; k++){
             }    
     }        
         
-    
-
-
 
 
 
